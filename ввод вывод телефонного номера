@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Phone
+{
+    string cod_country, cod_city, number;
+};
+
+void out_Phone (Phone phone)
+{
+    cout << phone.cod_country << phone.cod_city << phone.number;
+}
+void in_Phone(Phone &phone)
+{
+    cout << "vvedi"; cin >> phone.cod_country;
+    cout << "vvedi"; cin >> phone.cod_city;
+    cout << "vvedi"; cin >> phone.number;
+}
+
+int main () {
+
+    Phone phone;
+   
+   
+    in_Phone(phone);
+    out_Phone(phone);
+    
+    return 0;
+}
